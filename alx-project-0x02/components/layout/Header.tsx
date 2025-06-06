@@ -13,22 +13,10 @@ const Header: React.FC = () => {
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
             <Link
-              href="/"
+              href="/home"
               className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300"
             >
               Home
-            </Link>
-            <Link
-              href="/posts"
-              className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300"
-            >
-              Posts
-            </Link>
-            <Link
-              href="/users"
-              className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300"
-            >
-              Users
             </Link>
             <Link
               href="/about"
