@@ -19,4 +19,9 @@ export interface LayoutProps {
 export interface PageProps {
   title?: string;
   description?: string;
+}
+
+export interface CardProps {
+  title: string;
+  content: string;
 } 

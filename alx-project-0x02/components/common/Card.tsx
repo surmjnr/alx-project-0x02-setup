@@ -1,14 +1,11 @@
 import React from 'react';
+import { CardProps } from '../../interfaces';
 
-interface CardProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
-const Card: React.FC<CardProps> = ({ children, className = '' }) => {
+const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
-    <div className={`bg-white rounded-lg shadow-md p-6 ${className}`}>
-      {children}
+    <div className="bg-white rounded-lg shadow-md p-6 mb-4">
+      <h2 className="text-xl font-semibold mb-3">{title}</h2>
+      <p className="text-gray-600">{content}</p>
     </div>
   );
 };
